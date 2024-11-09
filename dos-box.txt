@@ -1,0 +1,49 @@
+mount e T:\DOSBox-0.74\FSysFAT
+mount e C:\Users\tznpa\source\repos\ism-antivirus\FSysFAT
+e:
+dir
+
+cd nc
+cd \.	=	cd ..
+cd chgc
+chgcolor.com 7:63 3:63
+
+mkdir day01
+
+rescan 		\\--> clear dosbox cache (sync folder)
+edit 	\\--> like nano
+
+Run p1 program:
+..\tasm\tasm.exe p1.asm
+..\tasm\tlink.exe p1.obj
+..\tasm\td.exe p1.exe
+
+
+
+in e:\avt\d2>
+e:\tc\bin\tcc.exe -ml -c p04p.c 
+..\..\tasm\tlink.exe p04p.obj
+..\..\tasm\td.exe p04p.exe
+
+
+copy p04p.c p05p.c
+
+COPY P05!1.C 
+
+
+
+in e:\AVT\D3\VIR>
+e:\tasm\tasm.exe *.asm
+e:\tasm\tlink.exe /tc HOST01.OBJ ; produces .com file 
+e:\tasm\tlink.exe /tc HOST02.OBJ
+e:\tasm\tlink.exe /tc HOST03.OBJ
+HOST01
+HOST02
+HOST03
+
+
+e:\TC\BIN\TC.EXE MINI44.EXE	
+
+copy H*.asm .. 				; copying host asm files in the directory above
+
+e:\tasm\td.exe mini44.com   ; debug
